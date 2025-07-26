@@ -1,18 +1,57 @@
 # clickbait-detection
 This repository is for MSE 641 final project.
 
+We build models for two subtasks: spoiler type classification and spoiler text generation, based on clickbait posts and linked articles.
+
+
 ## Repository Structure
 
 ```
 ├── README.md
-├── requirements.txt
+├── requirements.txt # Python dependencies
+├── clickbait_final.ipynb # Main notebook (Google Colab-compatible)
+├── Task_1.py # Script for spoiler type classification (Task 1)
+├── Task_2.py # Script for spoiler generation (Task 2)
 ├── data/
-│   ├── test.jsonl
-│   ├── train.jsonl
-│   └── val.jsonl
-├── Task_1.py
-└── Task_2.py
+│ ├── train.jsonl
+│ ├── val.jsonl
+│ └── test.jsonl
+├── results/
+│ ├── task1_output.csv
+│ └── task2_output.csv
 ```
+## How to Run
+
+> **Environment**: Python 3.8+, GPU recommended  
+> You can run this in Google Colab or locally (if **GPU** is available).
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run Task 1 (spoiler type classification)
+```bash
+python Task_1.py
+```
+Will output: results/task1_output.csv
+
+
+### 3. Run Task 2 (spoiler generation using T5)
+```bash
+python Task_2.py
+```
+Will output: results/task2_output.csv
+
+### To Run in Google Colab
+
+You can also run the full project notebook directly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nPJNEgjRoyX0vhZvC4L_BJ1jYhgLHroy?usp=sharing)
+
+Recommended: Use **A100 GPU** for faster training  
+Estimated runtime: **~30 minutes** for the entire project
+
 
 ## Task Descriptions
 
