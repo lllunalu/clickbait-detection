@@ -1,2 +1,3 @@
 # clickbait-detection
-MSE 641 final project
+This is MSE 641 final project.
+
