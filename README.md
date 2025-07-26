@@ -9,16 +9,16 @@ We build models for two subtasks: spoiler type classification and spoiler text g
 ```
 ├── README.md
 ├── requirements.txt # Python dependencies
-├── clickbait_final.ipynb # Main notebook (Google Colab-compatible)
+├── clickbait_detection_final.ipynb # Main notebook (Google Colab-compatible)
 ├── Task_1.py # Script for spoiler type classification (Task 1)
 ├── Task_2.py # Script for spoiler generation (Task 2)
 ├── data/
-│ ├── train.jsonl
-│ ├── val.jsonl
-│ └── test.jsonl
++ │   ├── train.jsonl
++ │   ├── val.jsonl
++ │   └── test.jsonl
 ├── results/
-│ ├── task1_output.csv
-│ └── task2_output.csv
++ │ ├── task1_output.csv
++ │ └── task2_output.csv
 ```
 ## How to Run
 
@@ -34,14 +34,14 @@ pip install -r requirements.txt
 ```bash
 python Task_1.py
 ```
-Will output: results/task1_output.csv
+> Output: `results/task1_output.csv`
 
 
 ### 3. Run Task 2 (spoiler generation using T5)
 ```bash
 python Task_2.py
 ```
-Will output: results/task2_output.csv
+> Output: `results/task2_output.csv`
 
 ### To Run in Google Colab
 
